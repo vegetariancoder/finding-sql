@@ -23,11 +23,32 @@ from
 
 
 
+
+
+
 select
     *,
     dense_rank() over (partition by department order by salary) as rankins,
     count(1) over (partition by department) as cnt
 from
     raw_data;
+
+select
+    department,salary
+from(
+select
+    department,
+    salary,
+    max(rankings) over (partition by department)as maxrank
+from
+    (
+select
+    department,
+    salary,
+    dense_rank() over (partition by department order by salary desc ) as rankings
+from
+    raw_data) table1) table2
+where
+    (maxrank==3) or (maxrank<=2 and maxrank==rankings)
 
 
