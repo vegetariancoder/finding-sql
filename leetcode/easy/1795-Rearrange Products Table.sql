@@ -9,7 +9,7 @@ insert into Products (product_id, store1,store2,store3) values (0,95,100,105);
 insert into Products (product_id, store1,store2,store3) values (1,70,null,80);
 
 
-
+create table NewProducts as (
 with 1795_leetcode as (
 select
     product_id,
@@ -40,4 +40,4 @@ select
 from
     1795_leetcode
 where
-    price is not null;
+    price is not null)
