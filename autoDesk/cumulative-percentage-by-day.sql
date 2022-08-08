@@ -23,6 +23,6 @@ select
     date_created,
     location_state,
     opp_count,
-    percent_rank() over (partition by location_state order by cumulative_opps_received) * 100
+    percent_rank() over (partition by location_state order by cumulative_opps_received) * 100 as percent_values
 from
     main_answer;
