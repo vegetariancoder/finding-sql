@@ -10,6 +10,15 @@ insert into Student (name, continent) values ('Jack','America');
 
 select * from Student;
 
+create table players_location
+(
+name varchar(20),
+city varchar(20)
+);
+
+insert into players_location
+values ('Sachin','Mumbai'),('Virat','Delhi') , ('Rahul','Bangalore'),('Rohit','Mumbai'),('Mayank','Bangalore');
+
 
 select
     America,
@@ -66,3 +75,89 @@ where
     Europe is not null) Europe_tb
 on
     America_tb.row_num_america = Europe_tb.row_num_europe;
+
+
+
+
+
+select * from players_location;
+
+
+select
+    Bangalore,
+    Mumbai,
+    Delhi
+from
+    (
+select
+    Bangalore,
+    row_number() over (order by Bangalore desc ) as rno
+from
+    (
+select
+    case
+        when city='Bangalore' then name
+    end as 'Bangalore'
+from
+    players_location
+order by
+    Bangalore desc) table1) bangalore
+inner join
+(select
+    Mumbai,
+    row_number() over (order by Mumbai desc ) as rno
+from
+    (
+select
+    case
+        when city='Mumbai' then name
+    end as 'Mumbai'
+from
+    players_location
+order by
+    Mumbai desc) table2) mumbai
+on
+    bangalore.rno = mumbai.rno
+inner join
+(select
+    Delhi,
+    row_number() over (order by Delhi desc ) as rno
+from
+    (
+select
+    case
+        when city='Delhi' then name
+    end as 'Delhi'
+from
+    players_location
+order by
+    Delhi desc) table2) delhi
+on
+    Bangalore.rno=delhi.rno
+limit 2;
+
+
+
+
+select * from players_location;
+
+
+select
+    max(case
+        when city='Bangalore' then name
+    end) as  Bangalore,
+    max(case
+        when city='Mumbai' then name
+    end) as  Mumbai,
+    max(case
+        when city='Delhi' then name
+    end) as  Delhi
+from
+    (
+select
+    *,
+    row_number() over (partition by city order by name) as r_no
+from
+    players_location) calculated_table
+group by
+    r_no;
