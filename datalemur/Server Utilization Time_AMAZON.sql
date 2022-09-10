@@ -14,24 +14,10 @@ select
     status_time as start_time,
     lead(status_time) over (partition by server_id order by status_time) as stop_time
 from
-    server_utilization),
-    server_1 as (
+    server_utilization)
 select
-    datediff(stop_time,start_time) as days_1
+    datediff(stop_time,start_time) * (select datediff(stop_time,start_time) from summary where server_id=2 and stop_time is not null) as result
 from
     summary
 where
-    server_id=1),
-    server_2 as (
-select
-    datediff(stop_time,start_time) as days_2
-from
-    summary
-where
-    server_id=2)
-select
-    days_1*days_2 as result
-from
-    server_1,server_2
-where
-    days_1*days_2 is not null;
+    server_id=1 and stop_time is not null;
