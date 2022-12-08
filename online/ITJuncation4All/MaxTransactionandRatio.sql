@@ -38,3 +38,22 @@ select
     TranDate
 from
     answer;
+
+with answer as (
+select
+    *,
+    first_value(TranAmt) over (partition by CustID order by TranAmt desc ) as fv
+from
+    Transaction_Tbl)
+select
+    CustID,
+    TranID,
+    TranAmt,
+    fv as MaxTranAmt,
+    round(TranAmt/fv,2) as Ratio,
+    TranDate
+from
+    answer;
+
+
+
