@@ -26,4 +26,25 @@ select
     end as Destination,
     Distance
 from
-    Travel_Table
+    Travel_Table;
+
+
+
+
+select * from Travel_Table;
+
+
+select
+    distinct
+    case
+        when Start_Location>End_Location then End_Location else Start_Location
+    end as Source,
+    case
+        when Start_Location>End_Location then Start_Location else End_Location
+    end as Destination,
+    Distance
+from
+    Travel_Table;
+
+
+select if('C'>'B','A','B')as test ;
