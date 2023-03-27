@@ -30,3 +30,18 @@ with recursive cte as (select 1 as id
                        from cte
                        where id < (select max(customer_id) from Customers))
 select id from cte left join Customers on cte.id=Customers.customer_id where customer_id is null;
+
+
+
+
+with recursive data as (
+select
+    1 as id
+union
+select
+    id+1
+from
+    data
+where
+    id < (select max(customer_id) from Customers))
+select id from data
