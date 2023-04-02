@@ -1,0 +1,22 @@
+[
+   {
+      "CountryName":"United States",
+      "fipsCode":"US"
+   },
+   {
+      "CountryName":"United Kingdom",
+      "fipsCode":"UK"
+   },
+   {
+      "CountryName":"India",
+      "fipsCode":"US"
+   },
+   {
+      "CountryName":"United States of America",
+      "fipsCode":"US"
+   },
+   {
+      "CountryName":"India",
+      "fipsCode":"IND"
+   }
+]
