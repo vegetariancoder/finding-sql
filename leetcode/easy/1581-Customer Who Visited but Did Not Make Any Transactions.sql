@@ -50,3 +50,72 @@ from
     1581_leetcode
 where
     count_no_trans > 0;
+
+
+
+with answer as (
+select
+    visit.customer_id,
+    visit_count,
+    trans_count
+from
+    (
+select
+    customer_id,
+    count(visit_id) as visit_count
+from
+    Visits
+group by
+    customer_id) visit
+left join
+(select
+    customer_id,
+    count(distinct Visits.visit_id) as trans_count
+from
+    Transactions
+inner join
+    Visits
+on
+    Transactions.visit_id = Visits.visit_id
+group by
+    customer_id) trans
+on
+    visit.customer_id = trans.customer_id)
+, main_answer as (
+select
+    customer_id,
+    visit_count-ifnull(trans_count,0) as count_no_trans
+from
+    answer)
+select
+    *
+from
+    main_answer
+where
+    count_no_trans !=0
+order by
+    count_no_trans desc ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
