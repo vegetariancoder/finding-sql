@@ -24,6 +24,29 @@ where
 
 
 
+with answer as (
+select
+    player_id,
+    lead(event_date) over (partition by player_id order by event_date) - Activity.event_date as diff
+from
+    Activity)
+select round(sum(distinct(case when diff=1 then player_id else null end))/count(distinct player_id),2) as fraction from answer;
+
+
+
+with stage as (select player_id, lead(event_date) over (partition by player_id order by event_date)-event_date as dif from activity)
+select round(sum(distinct(case when dif=1 then player_id else null end))/count(distinct player_id),2) as fraction from stage;
+
+with cte as
+(select player_id,
+event_date,
+lead(event_date) over (partition by player_id order by event_date)next_date,
+dense_rank() over (partition by player_id order by event_date) as rnk from activity
+)
+select round(sum(case when datediff(next_date,event_date) = 1 then 1 else 0 end)/count(distinct player_id),2)fraction
+from cte where rnk = 1
+
+
 
 
 
