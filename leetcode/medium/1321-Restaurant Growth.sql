@@ -53,6 +53,26 @@ group by
 
 
 
+WITH TotalAmount AS (SELECT visited_on,
+sum(amount) as total
+FROM Customer
+GROUP BY visited_on),
+answer as (
+select
+    visited_on,
+    sum(total) over (order by visited_on rows between 6 preceding and current row ) as sm,
+    round(avg(total) over (order by visited_on rows between 6 preceding and current row),2) as avg
+from
+    TotalAmount)
+select
+    visited_on,
+    sm as amount,
+    avg as average_amount
+from
+    answer
+where
+    date_sub(visited_on,interval 6 day) in (select visited_on from TotalAmount);
+
 
 
 

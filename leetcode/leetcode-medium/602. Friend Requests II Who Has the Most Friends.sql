@@ -41,3 +41,32 @@ from
     answer
 where
     drnk=1;
+
+
+
+with sub_answer as (
+select
+    requester_id as id,
+    count(*) as cnt
+from
+    RequestAccepted
+group by
+    requester_id
+union all
+select
+    accepter_id as id,
+    count(*) as cnt
+from
+    RequestAccepted
+group by
+    accepter_id)
+, answer as (
+select
+    id,
+    sum(cnt) as num,
+    dense_rank() over (order by sum(cnt) desc ) as drnk
+from
+    sub_answer
+group by
+    id)
+select id,num from answer where drnk=1;

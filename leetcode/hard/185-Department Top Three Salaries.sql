@@ -30,3 +30,27 @@ from
     185_leetcode
 where
     drnk <=3;
+
+
+
+with answer as (
+select
+    Department.name as Department,
+    Employee.name as Employee,
+    salary,
+    dense_rank() over (partition by Department.name order by salary desc ) as drnk,
+    count(Department.name) over (partition by Department.name) as cnt
+from
+    Employee
+inner join
+    Department
+on
+    Employee.departmentId = Department.id)
+select
+    Department,
+    Employee,
+    salary as Salary
+from
+    answer
+where
+    drnk <= 3 or (drnk<3 and drnk=cnt);
