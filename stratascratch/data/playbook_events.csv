@@ -1,0 +1,101 @@
+user_id	occurred_at	event_type	event_name	location	device
+6991	2014-06-09 18:26:54	engagement	home_page	United States	iphone 5
+18851	2014-08-29 13:18:38	signup_flow	enter_info	Russia	asus chromebook
+14998	2014-07-01 12:47:56	engagement	login	France	hp pavilion desktop
+8186	2014-05-23 10:44:16	engagement	home_page	Italy	macbook pro
+9626	2014-07-31 17:15:14	engagement	login	Russia	nexus 7
+16460	2014-07-24 18:43:19	signup_flow	create_user	United States	samsung galaxy note
+10101	2014-08-27 05:54:28	engagement	home_page	Singapore	dell inspiron notebook
+2670	2014-05-10 10:03:34	engagement	like_message	United States	nexus 7
+8708	2014-05-26 10:42:12	engagement	send_message	Australia	macbook pro
+167	2014-07-30 19:39:13	engagement	view_inbox	United Arab Emirates	lenovo thinkpad
+12725	2014-06-17 08:03:49	engagement	home_page	Brazil	macbook pro
+14014	2014-07-06 16:24:43	engagement	view_inbox	Japan	macbook pro
+13536	2014-06-18 09:34:08	engagement	send_message	United States	nexus 5
+2663	2014-06-13 07:45:26	engagement	home_page	United States	nokia lumia 635
+8149	2014-06-06 15:35:24	engagement	like_message	Australia	samsung galaxy s4
+3152	2014-05-20 17:57:00	engagement	home_page	Venezuela	iphone 5
+11496	2014-08-28 07:45:32	engagement	view_inbox	United States	lenovo thinkpad
+2755	2014-05-05 14:14:56	engagement	view_inbox	France	samsung galaxy s4
+3422	2014-07-03 14:09:37	engagement	send_message	United States	kindle fire
+2360	2014-06-02 19:53:13	engagement	search_click_result_9	United States	iphone 4s
+10061	2014-08-18 09:32:46	engagement	view_inbox	Spain	macbook pro
+12740	2014-05-21 00:57:22	signup_flow	enter_email	United Kingdom	iphone 4s
+7849	2014-06-16 15:53:29	engagement	home_page	Japan	nexus 7
+1002	2014-05-16 09:33:41	engagement	view_inbox	Canada	iphone 5s
+11836	2014-08-03 16:12:09	engagement	send_message	United States	iphone 4s
+6836	2014-08-01 14:58:53	engagement	view_inbox	United Kingdom	ipad air
+6663	2014-06-16 12:04:49	engagement	like_message	Australia	asus chromebook
+14653	2014-07-02 13:40:34	engagement	login	Australia	macbook pro
+2719	2014-08-17 15:19:21	engagement	view_inbox	India	iphone 4s
+2670	2014-05-11 13:58:13	engagement	home_page	United States	iphone 5s
+3067	2014-07-29 07:24:25	engagement	home_page	Canada	iphone 5s
+5108	2014-05-16 14:41:18	engagement	like_message	Canada	samsung galaxy s4
+5874	2014-07-31 14:55:05	engagement	search_run	Russia	iphone 5
+2267	2014-07-18 09:57:10	engagement	search_autocomplete	Brazil	macbook pro
+3526	2014-05-09 12:49:24	engagement	home_page	United States	hp pavilion desktop
+10323	2014-05-19 17:08:19	engagement	view_inbox	Switzerland	hp pavilion desktop
+11824	2014-05-20 07:22:14	engagement	home_page	Saudi Arabia	ipad mini
+12396	2014-05-14 18:10:21	engagement	view_inbox	United Kingdom	hp pavilion desktop
+13056	2014-08-12 13:45:27	engagement	home_page	Germany	ipad air
+6493	2014-05-04 10:33:59	engagement	search_run	United States	iphone 5
+12047	2014-05-25 18:56:39	engagement	search_autocomplete	Austria	macbook air
+10516	2014-07-22 17:35:33	engagement	send_message	Singapore	dell inspiron notebook
+3076	2014-08-08 12:03:34	engagement	send_message	United States	dell inspiron notebook
+9863	2014-07-11 08:59:44	engagement	view_inbox	Philippines	acer aspire desktop
+9915	2014-05-01 09:34:10	engagement	view_inbox	Indonesia	macbook pro
+175	2014-07-23 09:32:20	engagement	home_page	Russia	iphone 4s
+10350	2014-06-16 15:28:22	engagement	home_page	United States	iphone 5
+9283	2014-06-25 13:47:44	engagement	search_click_result_3	Canada	dell inspiron notebook
+10394	2014-05-27 06:50:52	engagement	home_page	Japan	macbook pro
+13397	2014-08-18 15:04:25	engagement	view_inbox	Japan	macbook air
+1078	2014-06-09 17:46:15	engagement	home_page	Germany	ipad mini
+7393	2014-08-08 12:32:17	engagement	search_autocomplete	Japan	acer aspire desktop
+4765	2014-08-29 11:09:56	engagement	search_autocomplete	United States	macbook pro
+17067	2014-08-04 19:01:43	signup_flow	complete_signup	United States	lenovo thinkpad
+13597	2014-06-05 20:28:17	signup_flow	enter_email	Netherlands	nexus 5
+8258	2014-05-08 09:34:53	engagement	home_page	United States	samsung galaxy note
+10523	2014-07-02 09:16:21	engagement	like_message	Canada	samsumg galaxy tablet
+2242	2014-08-03 18:49:13	engagement	home_page	United Kingdom	iphone 5
+11595	2014-07-15 17:18:47	engagement	view_inbox	Mexico	hp pavilion desktop
+9985	2014-07-28 09:34:16	engagement	like_message	Sweden	ipad air
+15725	2014-07-12 18:41:29	engagement	view_inbox	Japan	lenovo thinkpad
+4370	2014-06-19 17:28:52	engagement	like_message	Russia	iphone 5
+13466	2014-06-03 10:52:18	engagement	search_autocomplete	Hong Kong	macbook air
+8866	2014-08-05 08:34:57	engagement	home_page	United States	dell inspiron desktop
+10310	2014-07-18 11:54:13	engagement	send_message	Brazil	amazon fire phone
+13067	2014-07-23 04:16:36	engagement	like_message	United States	lenovo thinkpad
+2171	2014-08-26 07:29:39	engagement	send_message	United States	asus chromebook
+6622	2014-06-06 10:08:39	engagement	search_click_result_8	United States	acer aspire notebook
+12548	2014-06-05 13:46:41	engagement	login	Germany	nokia lumia 635
+12540	2014-05-16 14:20:55	signup_flow	create_user	Russia	lenovo thinkpad
+9876	2014-07-04 13:22:49	engagement	search_run	United States	samsung galaxy s4
+8716	2014-08-26 10:28:28	engagement	search_autocomplete	France	iphone 5
+8740	2014-07-26 09:39:44	engagement	search_autocomplete	United States	nexus 10
+12688	2014-07-11 18:00:37	engagement	search_autocomplete	Germany	hp pavilion desktop
+5109	2014-08-23 06:02:53	engagement	login	United States	dell inspiron desktop
+6261	2014-05-19 13:39:41	engagement	login	India	iphone 5
+11264	2014-07-17 17:53:21	engagement	view_inbox	Taiwan	lenovo thinkpad
+5298	2014-06-07 18:28:56	engagement	home_page	Brazil	asus chromebook
+14726	2014-07-15 12:08:40	engagement	home_page	United Kingdom	macbook pro
+13433	2014-07-26 06:48:34	engagement	like_message	United States	dell inspiron notebook
+264	2014-05-30 19:36:44	engagement	login	Venezuela	samsung galaxy s4
+108	2014-07-04 21:48:01	engagement	login	Mexico	lenovo thinkpad
+264	2014-06-05 09:23:02	engagement	login	Venezuela	dell inspiron desktop
+251	2014-07-29 14:32:29	engagement	login	Argentina	ipad air
+108	2014-07-08 07:43:11	engagement	login	Mexico	hp pavilion desktop
+264	2014-05-20 17:46:07	engagement	login	Venezuela	dell inspiron desktop
+251	2014-08-06 15:24:42	engagement	login	Argentina	macbook air
+238	2014-07-16 14:28:28	engagement	login	Venezuela	samsung galaxy note
+251	2014-08-02 10:47:41	engagement	login	Argentina	macbook air
+108	2014-07-21 17:34:43	engagement	login	Mexico	hp pavilion desktop
+12103	2014-06-25 11:10:04	engagement	like_message	Argentina	macbook pro
+16170	2014-08-23 18:53:20	engagement	like_message	Argentina	macbook pro
+12103	2014-06-19 19:45:39	engagement	home_page	Argentina	macbook pro
+12103	2014-06-25 11:08:39	engagement	like_message	Argentina	macbook pro
+16170	2014-08-25 13:32:34	engagement	home_page	Argentina	macbook pro
+16170	2014-08-22 13:33:08	engagement	home_page	Argentina	macbook pro
+16170	2014-08-19 11:07:59	engagement	login	Argentina	macbook pro
+12103	2014-06-25 11:07:03	engagement	login	Argentina	macbook pro
+12103	2014-06-19 19:47:14	engagement	home_page	Argentina	macbook pro
+12103	2014-06-18 16:00:16	engagement	search_autocomplete	Argentina	macbook pro
