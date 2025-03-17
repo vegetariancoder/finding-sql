@@ -6,6 +6,26 @@ drop table titleB;
 create table titleA (letter varchar(100));
 create table titleB (letter varchar(100));
 
+
+create table titleA (digits int);
+create table titleB (digits int);
+
+insert into titleA(digits) value (1);
+insert into titleA(digits) value (1);
+insert into titleA(digits) value (1);
+insert into titleA(digits) value (null);
+insert into titleA(digits) value (null);
+insert into titleA(digits) value (2);
+
+
+
+insert into titleB(digits) value (1);
+insert into titleB(digits) value (1);
+insert into titleB(digits) value (1);
+insert into titleB(digits) value (1);
+insert into titleB(digits) value (null);
+insert into titleB(digits) value (0);
+
 insert into titleA (letter) values ('A');
 insert into titleA (letter) values ('B');
 insert into titleA (letter) values ('C');
@@ -61,4 +81,14 @@ from titleB
 left outer join titleA
   on titleA.letter = titleB.letter
 where
-    titleA.letter IS NULL
+    titleA.letter IS NULL;
+
+
+select * from titleA;
+select * from titleB;
+
+
+select * from titleA
+right join titleB tB on titleA.digits = tB.digits;
+
+
